@@ -70,4 +70,9 @@ public class ArrayOps {
     }
     return returnstr == "t";
   }
+  public static boolean isLocationMagic(int[][]  matrix, int row, int col) {
+    int[] sumrowsarr = sumRows(matrix);
+    int[] sumcolsarr = sumCols(matrix);
+    return sumrowsarr[row] == sumcolsarr[col];
+  }
 }
