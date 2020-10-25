@@ -52,11 +52,11 @@ public class ArrayOps {
   }
   public static boolean isRowMagic(int[][] matrix) {
     String returnstr = "f";
-    int sumgoal = sum(matrix[0]);
-    for (int i = 0; i < matrix.length; i++) {
-      if (sum(matrix[i]) == sumgoal) {
+    int[] sumarr = sumRows(matrix);
+    for (int i = 0; i < sumarr.length; i++ ) {
+      if (sumarr[i] == sumarr[0]) {
         returnstr = "t";
-      } else return false;
+      }else return false;
     }
     return returnstr == "t";
   }
