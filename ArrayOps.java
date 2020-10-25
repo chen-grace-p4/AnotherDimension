@@ -60,4 +60,14 @@ public class ArrayOps {
     }
     return returnstr == "t";
   }
+  public static boolean isColMagic(int[][] matrix) {
+    String returnstr = "f";
+    int[] sumarr = sumCols(matrix);
+    for (int i = 0; i < sumarr.length; i++ ) {
+      if (sumarr[i] == sumarr[0]) {
+        returnstr = "t";
+      }else return false;
+    }
+    return returnstr == "t";
+  }
 }

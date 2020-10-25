@@ -9,6 +9,11 @@ public class Tester{
     int[][] TesterD = { {  1,  2, 3, 4 },
                         {  2, 3,  4,  1 },
                         { 3, 4,  1, 2 } };
+    int[][] TesterE = { {  2,  2, 2 },
+                        {  2, 2, 2 } };
+    int[][] TesterF = { {  1,  1, 1 },
+                        {  2, 2, 2 },
+                        { 3,  3, 3 } };
     //System.out.print(ArrayOps.sum(TesterA));
 
     //System.out.print(ArrayOps.largest(TesterA));
@@ -23,7 +28,10 @@ public class Tester{
     //PART 5
     //System.out.print(Arrays.toString(ArrayOps.sumCols(TesterC)));
 
-    System.out.println(ArrayOps.isRowMagic(TesterC));
-    System.out.print(ArrayOps.isRowMagic(TesterD));
+    //System.out.println(ArrayOps.isRowMagic(TesterC));
+    //System.out.print(ArrayOps.isRowMagic(TesterD));
+
+    System.out.println(ArrayOps.isColMagic(TesterE));
+    System.out.print(ArrayOps.isColMagic(TesterF));
   }
 }
