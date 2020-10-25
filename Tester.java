@@ -12,6 +12,9 @@ public class Tester{
 
     //System.out.print(Arrays.toString( ArrayOps.sumRows(TesterB) ));
 
-    System.out.print(Arrays.toString(ArrayOps.largestInRows(TesterC)));
+    //System.out.print(Arrays.toString(ArrayOps.largestInRows(TesterC)));
+
+    System.out.println(ArrayOps.sum(TesterC));
+    System.out.print(ArrayOps.sum(TesterB));
   }
 }
