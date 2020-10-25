@@ -38,5 +38,17 @@ public class ArrayOps {
     }
     return sumcounter;
   }
+  //PART 5
+  public static int[] sumCols(int[][] matrix) {
+    int[] retarr = new int[matrix[0].length];
+    for (int i = 0; i < matrix[0].length; i++) {
+      int sums = 0;
+      for (int j = 0; j < matrix.length; j++) {
+        sums += matrix[j][i];
+      }
+      retarr[i] = sums;
+    }
+    return retarr;
+  }
 
 }
